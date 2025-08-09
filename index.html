@@ -318,6 +318,34 @@
             </div>
         </div>
     </section>
+<!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("EtPEBLK4c9hRmG4F2"); // Public Key
+        })();
+
+        document.getElementById("greetingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const templateParams = {
+                from_name: document.getElementById("senderName").value,
+                from_email: document.getElementById("senderEmail").value,
+                to_email: document.getElementById("recipientEmail").value,
+                message: document.getElementById("greetingMessage").value
+            };
+
+            emailjs.send("service_qlkt5za", "template_mabjcaa", templateParams)
+            .then(function() {
+                document.getElementById("successMessage").style.display = "block";
+                document.getElementById("greetingForm").reset();
+            }, function(error) {
+                alert("❌ Failed to send message: " + JSON.stringify(error));
+            });
+        });
+    </script>
+</body>
+</html>
 
     <!-- Footer -->
     <footer class="footer">

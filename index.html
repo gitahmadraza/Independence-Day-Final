@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Independence Day Celebration - Version 2</title>
+    <meta name="description" content="Celebrate Pakistan's Independence Day with our patriotic website featuring national heroes, beautiful destinations, and cultural heritage.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-flag">🇵🇰</span>
+                <span class="nav-title">Pakistan Independence Day</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#heroes" class="nav-link">Heroes</a>
+                <a href="#places" class="nav-link">Places</a>
+                <a href="#history" class="nav-link">History</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#heroes" class="mobile-link">Heroes</a>
+            <a href="#places" class="mobile-link">Places</a>
+            <a href="#history" class="mobile-link">History</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="flag-container">
+                    <div class="pakistan-flag">
+                        <div class="flag-symbols">
+                            <span class="crescent">🌙</span>
+                            <span class="star">⭐</span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hero-title">Happy Independence Day 🇵🇰</h1>
+                <p class="hero-subtitle">Celebrating 77 Years of Freedom & Pride</p>
+                
+                <div class="timeline-container">
+                    <h2 class="timeline-title">Journey to Independence</h2>
+                    <div class="timeline-grid">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1857</div>
+                            <p class="timeline-text">War of Independence begins</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1940</div>
+                            <p class="timeline-text">Lahore Resolution passed</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1947</div>
+                            <p class="timeline-text">Pakistan gains independence</p>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="navigateToSection('heroes')">
+                            Meet Our Heroes →
+                        </button>
+                        <button class="btn btn-secondary" onclick="navigateToSection('places')">
+                            Explore Pakistan →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section id="heroes" class="section">
+        <div class="section-content">
+            <div class="section-header">
+                <h1 class="section-title">National Heroes</h1>
+                <p class="section-description">Honoring the visionaries who shaped our nation's destiny</p>
+            </div>
+            <div class="heroes-grid">
+                <div class="hero-card" data-hero="jinnah">
+                    <img src="https://www.youlinmagazine.com/articles/1635-1.jpg" alt="Muhammad Ali Jinnah">
+                    <div class="hero-info">
+                        <h3>Muhammad Ali Jinnah</h3>
+                        <p>Quaid-e-Azam (Great Leader)</p>
+                    </div>
+                    <div class="hero-overlay">
+                        <h3>Quaid-e-Azam</h3>
+                        <p>Founder of Pakistan, led the All-India Muslim League and championed the two-nation theory that resulted in the creation of Pakistan.</p>
+                    </div>
+                </div>
+                
+                <div class="hero-card" data-hero="iqbal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Allama_muhammad_iqbal.jpg" alt="Allama Iqbal">
+                    <div class="hero-info">
+                        <h3>Allama Iqbal</h3>
+                        <p>Poet-Philosopher</p>
+                    </div>
+                    <div class="hero-overlay">
+                        <h3>Allama Iqbal</h3>
+                        <p>National poet and philosopher who conceived the idea of Pakistan. His poetry inspired the Pakistan movement.</p>
+                    </div>
+                </div>
+                
+                <div class="hero-card" data-hero="fatima">
+                    <img src="https://photos.hamariweb.com/photos/Political-Mohtarma-Fatima-Jinnah--Mader-e-Millat-5415.jpg" alt="Fatima Jinnah">
+                    <div class="hero-info">
+                        <h3>Fatima Jinnah</h3>
+                        <p>Madar-e-Millat</p>
+                    </div>
+                    <div class="hero-overlay">
+                        <h3>Madar-e-Millat</h3>
+                        <p>Mother of the Nation, dental surgeon, biographer, and close confidant of Muhammad Ali Jinnah.</p>
+                    </div>
+                </div>
+                
+                <div class="hero-card" data-hero="liaquat">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Liaquat_Ali_Khan_1945.jpg/640px-Liaquat_Ali_Khan_1945.jpg" alt="Liaquat Ali Khan">
+                    <div class="hero-info">
+                        <h3>Liaquat Ali Khan</h3>
+                        <p>First Prime Minister</p>
+                    </div>
+                    <div class="hero-overlay">
+                        <h3>Quaid-e-Millat</h3>
+                        <p>First Prime Minister of Pakistan, played a crucial role in the establishment and early development of Pakistan.</p>
+                    </div>
+                </div>
+                
+                <div class="hero-card" data-hero="aqkhan">
+                    <img src="https://image.tmdb.org/t/p/w500/aPcabZHS3Fqdb9D5FrVootdnKXm.jpg" alt="Dr. A.Q. Khan">
+                    <div class="hero-info">
+                        <h3>Dr. A.Q. Khan</h3>
+                        <p>Nuclear Scientist</p>
+                    </div>
+                    <div class="hero-overlay">
+                        <h3>Father of Nuclear Program</h3>
+                        <p>Renowned metallurgist and nuclear engineer who founded Pakistan's nuclear weapons program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section id="places" class="section">
+        <div class="section-content">
+            <div class="section-header">
+                <h1 class="section-title">Beautiful Pakistan</h1>
+                <p class="section-description">Discover the breathtaking landscapes and iconic landmarks of our homeland</p>
+            </div>
+            <div class="places-grid">
+                <div class="place-card">
+                    <img src="hunza valley_1754478188735.jpeg" alt="Hunza Valley" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Hunza_Valley_from_Eagle_Nest.jpg/1200px-Hunza_Valley_from_Eagle_Nest.jpg'">
+                    <div class="place-info">
+                        <h3>Hunza Valley</h3>
+                        <p>A breathtaking mountainous valley known for its stunning landscapes, apricot blossoms, and the majestic Karakoram mountain range.</p>
+                    </div>
+                </div>
+                
+                <div class="place-card">
+                    <img src="badshahi mosque_1754478188734.jpeg" alt="Badshahi Mosque" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Badshahi_Mosque_July_1_2005_pic32_by_Ali_Imran_%281%29.jpg/1200px-Badshahi_Mosque_July_1_2005_pic32_by_Ali_Imran_%281%29.jpg'">
+                    <div class="place-info">
+                        <h3>Badshahi Mosque</h3>
+                        <p>A magnificent Mughal-era mosque in Lahore, renowned for its grand architecture and historical significance as one of the largest mosques in the world.</p>
+                    </div>
+                </div>
+                
+                <div class="place-card">
+                    <img src="Minar e pakistan_1754478188737.jpeg" alt="Minar-e-Pakistan" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Lahore%2C_Minar-e-Pakistan.jpg/800px-Lahore%2C_Minar-e-Pakistan.jpg'">
+                    <div class="place-info">
+                        <h3>Minar-e-Pakistan</h3>
+                        <p>A towering monument in Lahore commemorating the Lahore Resolution of 1940, symbolizing the struggle for Pakistani independence.</p>
+                    </div>
+                </div>
+                
+                <div class="place-card">
+                    <img src="mazar e quaid_1754478188736.jpeg" alt="Mazar-e-Quaid" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mazar-e-Quaid_Karachi.jpg/1200px-Mazar-e-Quaid_Karachi.jpg'">
+                    <div class="place-info">
+                        <h3>Mazar-e-Quaid</h3>
+                        <p>The mausoleum of Muhammad Ali Jinnah in Karachi, a beautiful marble structure that serves as the final resting place of Pakistan's founder.</p>
+                    </div>
+                </div>
+                
+                <div class="place-card">
+                    <img src="swat valley_1754478188738.jpeg" alt="Swat Valley" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kalam_Valley_Swat.jpg/1200px-Kalam_Valley_Swat.jpg'">
+                    <div class="place-info">
+                        <h3>Swat Valley</h3>
+                        <p>Known as the 'Switzerland of Pakistan,' this lush valley offers pristine natural beauty with emerald rivers, dense forests, and snow-capped peaks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section">
+        <div class="section-content">
+            <div class="section-header">
+                <h1 class="section-title">Our Heritage</h1>
+                <p class="section-description">The journey of Pakistan: From vision to reality</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item-full">
+                    <div class="timeline-year-full">1857</div>
+                    <div class="timeline-content">
+                        <h3>War of Independence</h3>
+                        <p>The first major uprising against British colonial rule, laying the foundation for future independence movements.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-full">
+                    <div class="timeline-year-full">1930</div>
+                    <div class="timeline-content">
+                        <h3>Allama Iqbal's Vision</h3>
+                        <p>Presidential address proposing the creation of a separate Muslim state in the Indian subcontinent.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-full">
+                    <div class="timeline-year-full">1940</div>
+                    <div class="timeline-content">
+                        <h3>Lahore Resolution</h3>
+                        <p>The historic resolution demanding the creation of independent states for Muslims in South Asia.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item-full">
+                    <div class="timeline-year-full">1947</div>
+                    <div class="timeline-content">
+                        <h3>Independence Day</h3>
+                        <p>Pakistan emerged as an independent nation on August 14, 1947, fulfilling the dream of millions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="symbols-section">
+                <h2>National Symbols</h2>
+                <div class="symbols-grid">
+                    <div class="symbol-card">
+                        <div class="symbol-icon">🌙</div>
+                        <h3>Crescent & Star</h3>
+                        <p>Symbols of progress and light, representing the aspirations of our nation.</p>
+                    </div>
+                    <div class="symbol-card">
+                        <div class="symbol-icon">🦌</div>
+                        <h3>Markhor</h3>
+                        <p>National animal symbolizing strength, dignity, and the mountainous heritage of Pakistan.</p>
+                    </div>
+                    <div class="symbol-card">
+                        <div class="symbol-icon">🌺</div>
+                        <h3>Jasmine</h3>
+                        <p>National flower representing purity, grace, and the natural beauty of our homeland.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <div class="section-header">
+                <h1 class="section-title">Send Independence Day Wishes</h1>
+                <p class="section-description">Share your patriotic greetings and Independence Day wishes with fellow Pakistanis</p>
+            </div>
+            
+            <div class="contact-container">
+                <form class="greeting-form" id="greetingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="senderName">Your Name</label>
+                            <input type="text" id="senderName" name="senderName" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="senderEmail">Your Email</label>
+                            <input type="email" id="senderEmail" name="senderEmail" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipientEmail">Recipient's Email</label>
+                        <input type="email" id="recipientEmail" name="recipientEmail" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="greetingMessage">Your Independence Day Wishes</label>
+                        <textarea id="greetingMessage" name="greetingMessage" rows="6" placeholder="Share your heartfelt Independence Day wishes for Pakistan..." required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">
+                        Send Independence Day Greetings
+                    </button>
+                </form>
+                
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Greetings Sent Successfully! 🇵🇰</h3>
+                    <p>Your Independence Day wishes have been delivered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-symbols">
+                <span class="footer-crescent">🌙</span>
+                <span class="footer-star">⭐</span>
+            </div>
+            <h3>Pakistan Zindabad!</h3>
+            <p>Long Live Pakistan</p>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#heroes">Heroes</a>
+                    <a href="#places">Places</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn More</h4>
+                    <a href="#history">History</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Pakistan Independence Day Celebration. Made with 💚 for Pakistan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

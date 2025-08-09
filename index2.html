@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day Greetings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <div class="section-header">
+                <h1 class="section-title">Send Independence Day Wishes</h1>
+                <p class="section-description">Share your patriotic greetings and Independence Day wishes with fellow Pakistanis</p>
+            </div>
+            
+            <div class="contact-container">
+                <form class="greeting-form" id="greetingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="senderName">Your Name</label>
+                            <input type="text" id="senderName" name="senderName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="senderEmail">Your Email</label>
+                            <input type="email" id="senderEmail" name="senderEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recipientEmail">Recipient's Email</label>
+                        <input type="email" id="recipientEmail" name="recipientEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="greetingMessage">Your Independence Day Wishes</label>
+                        <textarea id="greetingMessage" name="greetingMessage" rows="6" placeholder="Share your heartfelt Independence Day wishes for Pakistan..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">Send Independence Day Greetings</button>
+                </form>
+                
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Greetings Sent Successfully! 🇵🇰</h3>
+                    <p>Your Independence Day wishes have been delivered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("EtPEBLK4c9hRmG4F2"); // Public Key
+        })();
+
+        document.getElementById("greetingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const templateParams = {
+                from_name: document.getElementById("senderName").value,
+                from_email: document.getElementById("senderEmail").value,
+                to_email: document.getElementById("recipientEmail").value,
+                message: document.getElementById("greetingMessage").value
+            };
+
+            emailjs.send("service_qlkt5za", "template_mabjcaa", templateParams)
+            .then(function(response) {
+                console.log("SUCCESS!", response.status, response.text);
+                document.getElementById("successMessage").style.display = "block";
+                document.getElementById("greetingForm").reset();
+            }, function(error) {
+                console.error("FAILED...", error);
+                alert("❌ Failed to send message: " + JSON.stringify(error));
+            });
+        });
+    </script>
+</body>
+</html>

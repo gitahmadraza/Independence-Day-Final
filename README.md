@@ -14,7 +14,7 @@ A beautiful, patriotic website celebrating Pakistan's Independence Day (August 1
 
 ## 🚀 Live Demo
 
-Visit the live website: [Pakistan Independence Day](https://your-username.github.io/pakistan-independence-website/)
+Visit the live website: [Pakistan Independence Day](https://gitahmadraza.github.io/Independence-Day-Final/#home)
 
 ## 🛠️ Technologies
 
@@ -40,8 +40,6 @@ Simply open `index.html` in any modern web browser, or deploy to any static host
 Perfect for:
 - GitHub Pages (recommended)
 - Netlify
-- Vercel
-- Any static hosting service
 
 ## 💚 Made with Love for Pakistan
 
